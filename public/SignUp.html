@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up!</title>
+    <style>
+        *{
+            margin:0 0 0 0;
+        }
+        .divi{
+            display: flex;
+        }
+        .firstH{
+          background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 750px;
+            width:55%;
+        }
+        .secondH{
+            background-color: rgb(170, 159, 243);
+            height: 750px;
+            width:52%;
+        }
+        body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #0a0a23;
+    color: #000000;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 30px 10px 0 10px;
+    width: 100px;
+    height: 50px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
+  #sub{
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(104, 85, 224, 1);
+  }
+  #sub:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
+}
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  .inline{
+    display: inline; 
+  }
+  #logo{
+    margin-top: 300px;
+    height: 200px;
+    
+  }
+  
+  
+  
+    </style>
+</head>
+<body>
+<div class="divi">
+    <div class="firstH"><center>
+      <img id="logo" src="half4.png">
+    </center>
+    </div>
+    <div class="secondH">
+      
+    <form method="post" action='/signup'>
+      <fieldset>
+        
+      <h1>SIGN UP </h1>
+        <label for="first-name">Enter Your Full Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">News</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="">terms and conditions</a>
+      </label>
+      <input id="sub" type="submit" value="Submit" />
+    </form>
+    </div>
+</div>  
+</body>
+</html>
