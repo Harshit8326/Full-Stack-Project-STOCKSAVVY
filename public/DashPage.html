@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockSavvy-Dashboard
+    </title>
+    <style>
+        body{
+    margin:0 0 0 0;;
+    padding:0 0 0 0 ;
+}
+.head{
+    display: flex;
+    gap: 10%;
+    width: 70%;
+    margin-left: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    height: 80px;
+    
+}
+.loga{
+    display: flex;
+}
+#menu{
+    margin-top: 7px;border: 1px solid;
+    border-color: rgb(174, 174, 174);
+    color: rgb(180, 137, 236);
+    background-color: white;
+    transition: 0.4s;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100%;
+}
+
+.headdd{
+    display: flex;
+    gap:10%;
+}
+.menu{
+    margin-left: 300px;
+}
+#menu:hover{
+    
+    background-color: rgb(189, 154, 236);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+}
+.ohead{
+    display: flex;
+    border-bottom: 1px solid;
+    height: 80px;
+    
+    width: 100%;
+}
+#dash{
+    color: rgb(147, 74, 243);
+    border-bottom: 1px solid;
+}
+.fh2{
+    display: flex;
+}
+pre{
+    font-family:'Times New Roman', Times, serif;
+}
+.head2{
+    display:flex ;
+    font-size: 12px;
+    border-bottom: 1px solid;
+}
+#green{
+    color:green ;
+}
+#red{
+    color:red ;
+}
+.fh2{
+    width: 50%;
+}
+.sh2{
+    width:50%;
+    text-align: right;
+    padding-right: 40px;
+   color:rgb(166, 168, 168)
+}
+.bod{
+    display: flex;
+}
+.fhb{
+    width: 70%;
+    height:580px;
+}
+.shb{
+    width:30%;
+    /* border: 2px solid; */
+    height:580px;
+}
+.shbs{
+    margin:20px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+
+}
+input{
+    margin:20px;
+    height: 30px;
+    width: 330px;
+}
+.shbw{
+    height: 432px;
+    margin:20px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+}
+#inp2{
+    margin:10px;
+    height: 20px;
+    width: 150px;
+}
+/* .shbw1{
+    font-size: 10px;
+    display: flex;
+    margin:20px;
+    border-bottom:0.5px solid ;
+    
+} */
+table{
+    padding:10px 0px 30px 0px;
+    
+}
+td{
+    width:390px;
+    border-bottom: 1px solid;
+    border-color: rgb(209, 207, 207);
+    padding-top: 7px;
+    padding-left: 10px;
+}
+thead{
+    
+}
+#onel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    font-size: 10px;
+    padding:0 10px;
+}
+pre{
+    padding: 0;
+    margin:0;
+    font-size: 15px;
+}
+#tradetype{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(148, 152, 152);
+}
+#colorPL{
+    color: rgb(0, 205, 0);
+}
+#colorL{
+    color: rgb(255, 42, 0);
+}
+.ohead,.head2,table,.sh2{
+}
+.fhb{
+    display: flex;
+    
+}
+.fhblef{
+    height: 520px;
+    width: 34%;
+    /* border: 5px solid; */
+}
+.fhblef1{
+    display:flex;
+    height: 150px;
+    margin: 20px;
+    margin-left: 50px;
+    width: 300px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+}
+.fhalf1{
+    padding-left: 20px;
+    width: 60%;
+}
+#money{
+    padding-top: 30px;
+    height: 80px;
+}
+.fhblef2{
+    height: 350px;
+    margin: 20px;
+    margin-left: 50px;
+    width: 300px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+}
+.fhbrig{
+    height: 560px;
+    width: 64%;
+    /* border: 5px solid; */
+}
+.fhbrig1{
+    height:520px;
+    width: 100.5%;
+    margin: 20px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+    
+}
+#fndAv{
+    font-size: 20px ;
+}
+#amount{
+    font-size: 20px;
+}
+#addFunds{
+    font-size: 15px;
+    border: 1px solid;
+    border-color: rgb(174, 174, 174);
+    color: rgb(189, 154, 236);
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+#addFunds:hover{
+    background-color: rgb(189, 154, 236);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+}
+.fhblup{
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: rgb(195, 196, 198);
+}
+#ipo{
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+main{
+    width:80%;
+    height:100px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.slider{
+    height:100%;
+    width: 100%;
+    position: absolute;
+}
+
+#apply{
+    margin-top: 20px;
+    font-size: 15px;
+    border: 1px solid;
+    border-color: rgb(174, 174, 174);
+    color: rgb(180, 137, 236);
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px;
+}
+#apply:hover{
+    font-size: 20px;
+    background-color: rgb(207, 181, 243);
+    color: white;
+    border-radius: 4px;
+    
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    
+}
+.last{
+    height:250px;
+    width: 99%;
+}
+.lins{
+    display: flex;
+    height: 220px;
+    margin: 0 5px 40px 50px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+    
+}
+#aipo{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#aipo2{
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#chart{
+    height: 100%;
+    width:100%
+}
+.leflas{
+    margin: 70px;
+    margin-right: 0;
+    display: flex;
+    gap: 2%;
+    width: 100%;
+}
+.riglas{
+    font-size: 25px;
+    width: 100%;
+    padding: 0;
+}
+.up{
+    padding-top:25px;
+    display: flex;
+    gap:10%
+}
+.down{
+    display: flex;
+    gap:10%
+}
+.explore{
+    display: flex;
+}
+.Explore{
+    height: 50px;
+    margin-left: 50px;
+    width: 300px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+}
+#exp{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:0px;
+    padding: 10px;
+    font-size: 30px;
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+    width: 80%;
+}
+
+.inv{
+    gap:1%;
+    margin: 20px;
+    margin-left: 20px;
+    padding:0;
+    
+    padding-top: 10px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+}
+.invtw{
+    
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    height: 50px;
+    width: 300px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+    
+}
+#invee{
+    border-bottom: 1px solid;
+    width: 80%;
+    font-size: 35px;
+}
+
+#stocks{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid;
+}
+#gre{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(66, 216, 43);
+}
+#amo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.hehe1{
+    width: 400px;
+    margin-left: 20px;
+}
+
+#olas{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+#apply1{
+    margin-top: 8px;
+    border: 1px solid;
+    border-color: rgb(174, 174, 174);
+    color: rgb(164, 122, 223);
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+}
+#apply1:hover{
+    background-color: rgb(164, 122, 223);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    
+}
+.iposss{
+    display: flex;
+    gap:11%
+}
+
+
+
+
+
+
+.buy{
+    font-size:20px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    transform: translate(-50%,-50%) scale(0.1);
+    color: #333;        
+    width: 490px;
+    border: 2px solid ;
+    padding: 10px;
+    box-shadow: 5px solid black;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.buy1{
+    font-size:20px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    transform: translate(-50%,-50%) scale(0.1);
+    color: #333;        
+    width: 490px;
+    border: 2px solid ;
+    padding: 10px;
+    box-shadow: 5px solid black;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.buy2{
+    font-size:20px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    transform: translate(-50%,-50%) scale(0.1);
+    color: #333;        
+    width: 490px;
+    border: 2px solid ;
+    padding: 10px;
+    box-shadow: 5px solid black;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+
+
+.open-popup{
+    visibility: visible;
+    top: 280%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    }
+.open-popup1{
+    visibility: visible;
+    top: 280%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    }
+.open-popup2{
+    visibility: visible;
+    top: 280%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    }
+
+#quant,#pri{
+    padding: 0;
+    margin:0;
+}
+
+
+
+
+
+.buy3{
+    font-size:20px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 82.5%;
+    transform: translate(-50%,-50%) scale(0.1);
+    color: #333;        
+    width: 320px;
+    border: 2px solid ;
+    padding: 10px;
+    box-shadow: 5px solid black;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup3{
+    visibility: visible;
+    top: 25%;
+    left: 82.5%;
+    transform: translate(-50%,-50%) scale(1);
+}
+#crosss{
+    text-align: right;
+    padding: 0;
+    margin:0;
+}
+#crossss{
+    border: 2px solid;
+    background-color: white;
+    color:rgb(234, 67, 67);
+    border-radius: 50%;
+}
+#crossss:hover{
+    color: white;
+    background-color:rgb(234, 67, 67);
+}
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="headdd">
+    <div class="ohead">
+        <div class="head">
+        <div class="loga">
+        <img id="logo" src="half3-modified.png">
+        <h1 id="CName">stocksavvy</h1>
+        </div>
+        <a href="DashPage.html"><h1 id="dash">Dashboard</h1></a>
+        <a href="Portfolio.html"><h1>Portfolio</h1></a>
+        <h1><a href="Orders.html">Orders</a></h1>
+        <h1><a href="Funds.html">Funds</a></h1>
+        <h1><a href="https://mmb.moneycontrol.com/forum-topics/stocks-1.html" target="_blank">Discussion</a></h1>
+        
+    </div>
+        <div class="menu">
+        <h1 id="menu" onclick="openPopup3()">≡</h1>
+        </div>
+</div>
+</div>
+<div class="head2">
+    <div class="fh2"><pre>        <b>Nifty 50</b>
+        22,055.05 <span id="green">+141.90 (0.64%)</span> </pre><br>
+        <pre>        <b>BSE Sensex</b>
+        57,578.76 <span id="red">-273.51 (0.52%)</span></pre></div>
+    <div class="sh2">
+        <h2><pre><a href="DashPage.html#e">Explore</a>     <a href="DashPage.html#i">Investment</a>     <a href="DashPage.html#ip">IPO</a> </pre></h2>
+    </div>    
+</div>
+
+<div class="bod">
+    <div class="fhb">
+        <div class="fhblef">
+            <div class="fhblef1">
+                <div class="fhalf1">
+                    <b><p id="fndAv">Funds Available</p>
+                    <p id="amount">₹6500</p></b>
+                    <a href="Funds.html"><button id="addFunds">Add Funds</button></a>
+                </div>
+                <div class="fhalf2">
+                    <img id="money" src="money.jpg">
+                </div>
+            </div>
+            <div class="fhblef2">
+                <div class="fhblup"><p id="ipo">New IPO</p></div>
+                <div class="fhbldw">
+                    
+                    
+                    <main>
+                        <img src="olaIPO.webp" alt="" class="slider">
+                        <img src="ixigoIPO.png" alt="" class="slider">
+                        <img src="NSDLipo.png" alt="" class="slider">
+                    </main>
+                    <center><a href="DashPage.html#ip"><button id="apply">Apply Now</button></a></center>
+                    <p id="aipo">Q.What Is an IPO?🤔</p>
+                       <p id="aipo2">An IPO is an initial public offering, in which shares of a private company are made available to the public for the first time.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="fhbrig">
+            <div class="fhbrig1">
+                <img id="chart" src="chart.png">
+            </div>
+        </div>
+    </div>
+    <div class="shb">
+        <div class="shbs">
+            <input type="search" placeholder="🔍Search Stock">
+        </div>
+        <div class="shbw">
+                <table class shbw1>
+                    <thead>
+                        <tr>
+                            <td id="onel">
+            <h1>My Watchlist </h1> 
+            
+            </td>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><pre>COALINDIA                                                          <span id="colorPL">439.10</span>
+<span id="tradetype">NSE</span>                                                                    +6.7 (+1.55%)    </pre></td>
+                </tr>
+                <tr>
+                    <td><pre>DOMS                                                                     <span id="colorPL">1537.85</span>
+<span id="tradetype">BSE</span>                                                                    +8.5 (+2.95%)    </pre> </td>
+                </tr>
+                <tr>
+                    <td><pre>POWERGRID                                                          <span id="colorL">276.25</span>
+<span id="tradetype">NSE</span>                                                                    -3.85 (-1.39%)    </pre> </td>
+                </tr>
+                <tr>
+                    <td><pre>HUDCO                                                                   <span id="colorPL">196.50</span>
+<span id="tradetype">BSE</span>                                                                  +0.60 (+0.30%)    </pre> </td>
+                </tr>
+                <!-- <tr>
+                    <td><pre></pre> </td>
+                </tr>
+                <tr>
+                    <td><pre></pre> </td>
+                </tr>
+                <tr>
+                    <td><pre></pre> </td>
+                </tr>
+                <tr>
+                    <td><pre></pre> </td>
+                </tr> -->
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<center>
+    <div class="Explore">
+            <i><p id="exp" id="invee">EXPLORE</p></i>
+    </div>
+</center>
+
+
+<div class="explore" id="e">
+<div class="fhblef1">
+    <div class="fhalf1">
+        <b><p id="fndAv"><pre>POWERGRID                                <span id="colorL">276.25</span>
+<span id="tradetype">NSE</span>                                        -3.85 (-1.39%)    </pre> </td>
+                            </p>
+        <p id=""><pre>Open: 279.5                           Close: 276.25</pre></p></b>
+        <B><p id=""><pre>High: 282.35                          Low: 274.70</pre></p></b>
+    </div>
+</div>
+<div class="fhblef1">
+    
+    <div class="fhalf1">
+        <b><p id="fndAv"><pre>HUDCO                                         <span id="colorPL">196.50</span>
+<span id="tradetype">NSE</span>                                      +0.60 (+0.30%)<span>    </pre> </td>
+                            </p>
+        <p id=""><pre>Open: 192.05                         Close: 196.50</pre></p></b>
+        <B><p id=""><pre>High: 198.00                          Low: 189.70</pre></p></b>
+    </div>
+</div>
+<div class="fhblef1">
+    <div class="fhalf1">
+        <b><p id="fndAv"><pre>ITC                                            <span id="colorPL">424.80</span>
+<span id="tradetype">BSE</span>                                      +5.85 (+1.39%)<span>    </pre> </td>
+                            </p>
+        <p id=""><pre>Open: 417.6                           Close: 424.80</pre></p></b>
+        <B><p id=""><pre>High: 426.30                          Low: 416.30</pre></p></b>
+    </div>
+</div>
+<div class="fhblef1">
+    <div class="fhalf1">
+        <b><p id="fndAv"><pre>PERFEPA                                        <span id="colorPL">138.46</span>
+<span id="tradetype">BSE</span>                                   +23.07 (+19.99%)<span>    </pre> </td>
+                            </p>
+        <p id=""><pre>Open: 137.8                           Close: 138.46</pre></p></b>
+        <B><p id=""><pre>High: 138.46                          Low: 125.20</pre></p></b>
+    </div>
+</div>
+</div>
+        
+<div class="explore">
+    <div class="fhblef1">
+        <div class="fhalf1">
+            <b><p id="fndAv"><pre>POWERGRID                                <span id="colorL">276.25</span>
+<span id="tradetype">NSE</span>                                        -3.85 (-1.39%)    </pre> </td>
+                                </p>
+            <p id=""><pre>Open: 279.5                           Close: 276.25</pre></p></b>
+            <B><p id=""><pre>High: 282.35                          Low: 274.70</pre></p></b>
+        </div>
+    </div>
+    <div class="fhblef1">
+        
+        <div class="fhalf1">
+            <b><p id="fndAv"><pre>HUDCO                                         <span id="colorPL">196.50</span>
+<span id="tradetype">NSE</span>                                      +0.60 (+0.30%)<span>    </pre> </td>
+                                </p>
+            <p id=""><pre>Open: 192.05                         Close: 196.50</pre></p></b>
+            <B><p id=""><pre>High: 198.00                          Low: 189.70</pre></p></b>
+        </div>
+    </div>
+    <div class="fhblef1">
+        <div class="fhalf1">
+            <b><p id="fndAv"><pre>ITC                                            <span id="colorPL">424.80</span>
+<span id="tradetype">BSE</span>                                      +5.85 (+1.39%)<span>    </pre> </td>
+                                </p>
+            <p id=""><pre>Open: 417.6                           Close: 424.80</pre></p></b>
+            <B><p id=""><pre>High: 426.30                          Low: 416.30</pre></p></b>
+        </div>
+    </div>
+    <div class="fhblef1">
+        <div class="fhalf1">
+            <b><p id="fndAv"><pre>PERFEPA                                        <span id="colorPL">138.46</span>
+<span id="tradetype">BSE</span>                                   +23.07 (+19.99%)<span>    </pre> </td>
+                                </p>
+            <p id=""><pre>Open: 137.8                           Close: 138.46</pre></p></b>
+            <B><p id=""><pre>High: 138.46                          Low: 125.20</pre></p></b>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="explore">
+        <div class="fhblef1">
+            <div class="fhalf1">
+                <b><p id="fndAv"><pre>POWERGRID                                <span id="colorL">276.25</span>
+<span id="tradetype">NSE</span>                                        -3.85 (-1.39%)    </pre> </td>
+                                    </p>
+                <p id=""><pre>Open: 279.5                           Close: 276.25</pre></p></b>
+                <B><p id=""><pre>High: 282.35                          Low: 274.70</pre></p></b>
+            </div>
+        </div>
+        <div class="fhblef1">
+            
+            <div class="fhalf1">
+                <b><p id="fndAv"><pre>HUDCO                                         <span id="colorPL">196.50</span>
+<span id="tradetype">NSE</span>                                      +0.60 (+0.30%)<span>    </pre> </td>
+                                    </p>
+                <p id=""><pre>Open: 192.05                         Close: 196.50</pre></p></b>
+                <B><p id=""><pre>High: 198.00                          Low: 189.70</pre></p></b>
+            </div>
+        </div>
+        <div class="fhblef1">
+            <div class="fhalf1">
+                <b><p id="fndAv"><pre>ITC                                            <span id="colorPL">424.80</span>
+<span id="tradetype">BSE</span>                                      +5.85 (+1.39%)<span>    </pre> </td>
+                                    </p>
+                <p id=""><pre>Open: 417.6                           Close: 424.80</pre></p></b>
+                <B><p id=""><pre>High: 426.30                          Low: 416.30</pre></p></b>
+            </div>
+        </div>
+        <div class="fhblef1">
+            <div class="fhalf1">
+                <b><p id="fndAv"><pre>PERFEPA                                        <span id="colorPL">138.46</span>
+<span id="tradetype">BSE</span>                                   +23.07 (+19.99%)<span>    </pre> </td>
+                                    </p>
+                <p id=""><pre>Open: 137.8                           Close: 138.46</pre></p></b>
+                <B><p id=""><pre>High: 138.46                          Low: 125.20</pre></p></b>
+            </div>
+        </div>
+        </div>
+
+        <div class="explore">
+            <div class="fhblef1">
+                <div class="fhalf1">
+                    <b><p id="fndAv"><pre>POWERGRID                                <span id="colorL">276.25</span>
+<span id="tradetype">NSE</span>                                        -3.85 (-1.39%)    </pre> </td>
+                                        </p>
+                    <p id=""><pre>Open: 279.5                           Close: 276.25</pre></p></b>
+                    <B><p id=""><pre>High: 282.35                          Low: 274.70</pre></p></b>
+                </div>
+            </div>
+            <div class="fhblef1">
+                
+                <div class="fhalf1">
+                    <b><p id="fndAv"><pre>HUDCO                                         <span id="colorPL">196.50</span>
+<span id="tradetype">NSE</span>                                      +0.60 (+0.30%)<span>    </pre> </td>
+                                        </p>
+                    <p id=""><pre>Open: 192.05                         Close: 196.50</pre></p></b>
+                    <B><p id=""><pre>High: 198.00                          Low: 189.70</pre></p></b>
+                </div>
+            </div>
+            <div class="fhblef1">
+                <div class="fhalf1">
+                    <b><p id="fndAv"><pre>ITC                                            <span id="colorPL">424.80</span>
+<span id="tradetype">BSE</span>                                      +5.85 (+1.39%)<span>    </pre> </td>
+                                        </p>
+                    <p id=""><pre>Open: 417.6                           Close: 424.80</pre></p></b>
+                    <B><p id=""><pre>High: 426.30                          Low: 416.30</pre></p></b>
+                </div>
+            </div>
+            <div class="fhblef1">
+                <div class="fhalf1">
+                    <b><p id="fndAv"><pre>PERFEPA                                        <span id="colorPL">138.46</span>
+<span id="tradetype">BSE</span>                                   +23.07 (+19.99%)<span>    </pre> </td>
+                                        </p>
+                    <p id=""><pre>Open: 137.8                           Close: 138.46</pre></p></b>
+                    <B><p id=""><pre>High: 138.46                          Low: 125.20</pre></p></b>
+                </div>
+            </div>
+            </div>
+
+<div class="inv" id="i">
+    <center><div class="invtw">
+    <i><p id="invee">Investment</p></i>
+    </div></center>
+
+
+    <div class="explore">
+        <div class="fhblef1">
+            <div class="hehe1">
+                <i><p id="stocks">Stocks</p></i>
+                <p id="amo"><span id="tradetype">Investment :</span> Rs.14500 </p>
+                <p id="gre"><span id="tradetype">Overall Return : </span>Rs.2542</p>
+            </div>
+        </div>
+        <div class="fhblef1">
+            <div class="hehe1">
+                <i><p id="stocks">Mutual Funds</p></i>
+                <p id="amo"><span id="tradetype">Investment :</span> Rs.28000 </p>
+                <p id="gre"><span id="tradetype">Overall Return : </span>Rs.4800</p>
+            </div>
+        </div>
+        <div class="fhblef1">
+            <div class="hehe1">
+                <i><p id="stocks">Currency</p></i>
+                <p id="amo"><span id="tradetype">Investment :</span> Rs.5000 </p>
+                <p id="gre"><span id="tradetype">Overall Return : </span>Rs580</p>
+            </div>
+        </div>
+        <div class="fhblef1">
+            <div class="hehe1">
+                <i><p id="stocks">Commodity</p></i>
+                <p id="amo"><span id="tradetype">Investment :</span> Rs.18500 </p>
+                <p id="gre"><span id="tradetype">Overall Return : </span>Rs2900</p>
+            </div>
+        </div>
+        
+</div>
+</div>
+
+
+<div class="inv" id="ip">
+    <center><div class="invtw">
+    <i><p id="invee">IPO</p></i>
+    </div></center>
+    <div class="iposss">
+        <div class="fhblef2">
+            <div class="fhblup"><p id="ipo">New IPO</p></div>
+            <div class="img">
+                <center><img src="olaIPO.webp" id="olas" ></center>
+                <p id="aipo"><span id="tradetype">Invester type:</span> Individual</p>
+                <p id="aipo"><span id="tradetype">Issue size:</span> 0</p>
+                <p id="aipo"><span id="tradetype">Discount:</span> N/A</p>
+                <p id="aipo"><span id="tradetype">Lot size:</span> 2000</p>
+                <center><button id="apply1" onclick="openPopup1()">Apply</button></center>          
+            </div>
+        </div>
+        <div class="fhblef2">
+            <div class="fhblup"><p id="ipo">New IPO</p></div>
+            <div class="img">
+                <center><img src="ixigoIPO.png" id="olas" ></center>
+                <p id="aipo"><span id="tradetype">Invester type:</span> Individual</p>
+                <p id="aipo"><span id="tradetype">Issue size:</span> 0</p>
+                <p id="aipo"><span id="tradetype">Discount:</span> N/A</p>
+                <p id="aipo"><span id="tradetype">Lot size:</span> 2000</p>
+                <center><button id="apply1" onclick="openPopup2()">Apply</button></center>          
+            </div>
+        </div>
+
+        <div class="fhblef2">
+            <div class="fhblup"><p id="ipo">New IPO</p></div>
+            <div class="img">
+                <center><img src="NSDLipo.png" id="olas" ></center>
+                <p id="aipo"><span id="tradetype">Invester type:</span> Individual</p>
+                <p id="aipo"><span id="tradetype">Issue size:</span> 0</p>
+                <p id="aipo"><span id="tradetype">Discount:</span> N/A</p>
+                <p id="aipo"><span id="tradetype">Lot size:</span> 2000</p>
+                <center><button id="apply1" onclick="openPopup()">Apply</button></center>          
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="last">
+    <div class="lins">
+        <div class="leflas">
+            <img id="logo" src="half3-modified.png">
+            <h1 id="CName">stocksavvy</h1>
+        </div>
+        <div class="riglas">
+            <div class="up">
+                <a href="index.html#about"><p>About us</p></a>
+                <a href="index.html#newsss"><p>News</p></a>
+                <a href=""><p>Terms of Service</p></a>
+            </div>
+            <div class="down">
+                <a href="index.html#contact"><p>Contact us</p></a>
+                <a href="index.html"><p>Home</p></a>
+                <a href=""><p>Privacy Policy</p></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="buy" id="buy">
+                <center><img src="NSDLipo.png" id="olas" ></center>
+                <p id="aipo"><span id="tradetype">Quantity : </span><input type="text" value="2000" id="quant"> </p>
+                <p id="aipo"><span id="tradetype">Price : </span><input type="text" value="62.0" id="pri"> </p>
+                <p id="aipo"><span id="tradetype">Lot : </span> 2000</p>
+                <p id="aipo"><span id="tradetype">Price : </span> Rs.62.0 -Rs.62.0</p>
+                <center><button id="apply1" type="submit" onclick="closePopup()">BUY</button></center>          
+    </div>
+    <div class="buy1" id="buy1">
+        <center><img src="olaIPO.webp" id="olas" ></center>
+        <p id="aipo"><span id="tradetype">Quantity : </span><input type="text" value="2000" id="quant"> </p>
+        <p id="aipo"><span id="tradetype">Price : </span><input type="text" value="62.0" id="pri"> </p>
+        <p id="aipo"><span id="tradetype">Lot : </span> 2000</p>
+        <p id="aipo"><span id="tradetype">Price : </span> Rs.62.0 -Rs.62.0</p>
+        <center><button id="apply1" type="submit" onclick="closePopup1()">BUY</button></center>          
+</div>
+<div class="buy2" id="buy2">
+    <center><img src="ixigoIPO.png" id="olas" ></center>
+    <p id="aipo"><span id="tradetype">Quantity : </span><input type="text" value="2000" id="quant"> </p>
+    <p id="aipo"><span id="tradetype">Price : </span><input type="text" value="62.0" id="pri"> </p>
+    <p id="aipo"><span id="tradetype">Lot : </span> 2000</p>
+    <p id="aipo"><span id="tradetype">Price : </span> Rs.62.0 -Rs.62.0</p>
+    <center><button id="apply1" type="submit" onclick="closePopup2()">BUY</button></center>          
+</div>
+
+<div class="buy3" id="buy3">
+    <p id="crosss" ><button id="crossss" onclick="closePopup3()">x</button></p>
+    <center><img src="me.jpg" id="olas" ></center>
+    <center><p id="aipo"><span id="tradetype">User : </span> harshit8326</p>
+    <p id="aipo"><span id="tradetype">Applic. No : </span>23656546 </p>
+    <p id="aipo"><span id="tradetype">Email : </span> ihspvt@gmail1.com</p></center>
+    <center><a href="index.html"><button id="apply1" type="submit" >Logout</button></a></center>          
+</div>
+<script>
+        
+  function openPopup(){
+        let x=document.getElementById("buy")
+        x.classList.add("open-popup")
+  }
+  
+  function openPopup1(){
+        let x=document.getElementById("buy1")
+        x.classList.add("open-popup1")
+  }
+  
+  function openPopup2(){
+        let x=document.getElementById("buy2")
+        x.classList.add("open-popup2")
+  }
+  
+  function closePopup(){
+    const myTimeout = setTimeout(Hello, 400);
+  }
+  
+  function closePopup1(){
+    const myTimeout = setTimeout(Hello1, 400);
+  }
+  
+  function closePopup2(){
+    const myTimeout = setTimeout(Hello2, 400);
+  }
+
+  
+  function Hello(){
+        let x=document.getElementById("buy")
+        x.classList.remove("open-popup")
+  }
+  
+  
+  function Hello1(){
+        let x=document.getElementById("buy1")
+        x.classList.remove("open-popup1")
+  }
+  
+  
+  function Hello2(){
+        let x=document.getElementById("buy2")
+        x.classList.remove("open-popup2")
+  }
+
+
+
+  function openPopup3(){
+        let x=document.getElementById("buy3")
+        x.classList.add("open-popup3")
+  }
+  function closePopup3(){
+        let x=document.getElementById("buy3")
+        x.classList.remove("open-popup3")
+  }
+  
+
+
+    const slides=document.querySelectorAll(".slider");
+// console.log(slides);
+var counter=0;
+const autoF=()=>
+{
+    counter= (++counter)%slides.length
+    sliderun()
+}
+const sliderun=()=>
+{
+    slides.forEach(
+        (slider) =>{
+            slider.style.transform=`translateX(-${counter * 100}%)`
+        }
+    )
+}
+slides.forEach(
+    (slider,index)=>
+    slider.style.left=`${(index * 100)}%`
+)
+
+setInterval(autoF, 2000);
+</script>
+</body>
+</html>

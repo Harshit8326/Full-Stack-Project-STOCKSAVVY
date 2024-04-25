@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockSavvy-Funds
+    </title>
+    <style>
+        body{
+    margin:0 0 0 0;;
+    padding:0 0 0 0 ;
+}
+.head{
+    display: flex;
+    gap: 10%;
+    width: 70%;
+    margin-left: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    height: 80px;
+    
+}
+.loga{
+    display: flex;
+}
+.menu{
+    margin-left: 300px;
+}
+
+.headdd{
+    display: flex;
+    gap:10%;
+}
+#menu{
+    margin-top: 7px;
+    border: 1px solid;
+    border-color: rgb(174, 174, 174);
+    color: rgb(180, 137, 236);
+    background-color: white;
+    transition: 0.4s;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100%;
+}
+#menu:hover{
+    
+    background-color: rgb(189, 154, 236);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+}
+.ohead{
+    display: flex;
+    border-bottom: 1px solid;
+    height: 80px;
+    
+    width: 100%;
+}
+#dash{
+    color: rgb(147, 74, 243);
+    border-bottom: 1px solid;
+}
+.fh2{
+    display: flex;
+}
+pre{
+    font-family:'Times New Roman', Times, serif;
+}
+.head2{
+    display:flex ;
+    font-size: 12px;
+    border-bottom: 1px solid;
+}
+#green{
+    color:green ;
+}
+#red{
+    color:red ;
+}
+.fh2{
+    width: 50%;
+}
+.sh2{
+    width:50%;
+    text-align: right;
+    padding-right: 40px;
+   color:rgb(166, 168, 168)
+}
+.bod{
+    display: flex;
+}
+.fhb{
+    width: 70%;
+    height:680px;
+}
+.shb{
+    width:30%;
+    /* border: 2px solid; */
+    height:580px;
+}
+.shbs{
+    margin:20px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+
+}
+input{
+    margin:20px;
+    height: 30px;
+    width: 330px;
+}
+.shbw{
+    height: 432px;
+    margin:20px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+}
+#inp2{
+    margin:10px;
+    height: 20px;
+    width: 150px;
+}
+/* .shbw1{
+    font-size: 10px;
+    display: flex;
+    margin:20px;
+    border-bottom:0.5px solid ;
+    
+} */
+table{
+    padding:10px 0px 30px 0px;
+    
+}
+td{
+    width:390px;
+    border-bottom: 1px solid;
+    border-color: rgb(209, 207, 207);
+    padding-top: 7px;
+    padding-left: 10px;
+}
+thead{
+    
+}
+#onel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    font-size: 10px;
+    padding:0 10px;
+}
+pre{
+    padding: 0;
+    margin:0;
+    font-size: 15px;
+}
+#tradetype{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(148, 152, 152);
+}
+#colorPL{
+    color: rgb(0, 205, 0);
+}
+#colorL{
+    color: rgb(255, 42, 0);
+}
+
+
+.note{
+    margin:30px;
+    padding-left: 20px;
+    padding-top: 0.1px;
+    margin-left: 50px;
+    height: 50px;
+    width: 92%;
+    color: rgb(163, 30, 0);
+    background-color: rgb(250, 201, 201);
+    border-color: black;
+    border-radius: 5px;
+    display:flex;
+}
+#cross{
+    font-size: 15px;
+    color: rgb(89, 79, 79);
+    margin-left: 150px;
+    border: 0;
+    background-color: rgb(250, 201, 201);
+}
+#cross:hover{
+    color: black;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.twofh{
+    height: 260px;
+    width: 94%;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+    margin:30px;
+    margin-left: 50px;
+    display: flex;
+
+}
+.leftss{
+    height: 240px;
+    width:50%;
+}
+.lef1{
+    height: 60px;
+    margin:20px;
+    background-color: rgb(248, 247, 247);
+    border-radius: 3px;
+    border: 1px solid rgb(198, 195, 195);
+    display: flex;
+}
+
+.lef2{
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(248, 247, 247);
+    border: 1px solid rgb(198, 195, 195);
+    display: flex;
+    font-size: 20px;
+}
+.lef3{
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(198, 195, 195);
+    border-top: 0;
+    
+}
+#ltamoun{
+    margin: 7px;
+    font-size: 20px;
+}
+#addfun{
+    margin: 20px 5px 20px 120px;
+    padding: 4px;
+    height: 25px;
+    border: 1px solid;
+    background-color: white;
+    color: rgb(102, 221, 102);
+    border-color: rgb(102, 221, 102);
+    border-radius: 5px;
+}
+#addfun:hover{
+    background-color: rgb(102, 221, 102);
+    color: white;
+    transition: 0.4s;
+    height: 30px;
+    font-size: 15px;
+}
+#withdraw{  
+    margin: 20px 5px 20px 0;
+    padding: 4px;
+    height: 25px;
+    border: 1px solid;
+    color: rgb(238, 54, 54);
+    border-color: rgb(238, 54, 54);
+    background-color: white;
+    border-radius: 5px;
+
+}
+#withdraw:hover{
+    background-color: rgb(238, 54, 54);
+    color: white;
+    transition: 0.4s;
+    height: 30px;
+    font-size: 14px;
+}
+#sbi{
+    margin: 14px;
+    height: 30px;
+}
+#text3{
+    font-size: 18px;
+    padding: 5px;
+}
+#tex3d{
+    font-size: 15px;
+
+}
+
+.rightss{
+    width: 50%;
+}
+.up1{
+    text-align: center;
+    border-bottom: 2px dashed;
+    width: 95%;
+    border-color: rgb(211, 216, 220);
+ }
+.up2{
+    display: flex;
+    gap:50%;
+    border-bottom: 2px dashed;
+    width: 95%;
+    border-color: rgb(211, 216, 220);
+ 
+    
+}
+.up3{
+    display: flex;
+    gap:50%;
+}
+.upbut{
+    text-align: right;
+    padding-right:30px ;
+}
+
+#rupe{
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 0;
+}
+#Ainv{
+    
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(147, 74, 243);
+}
+#Ob{
+    font-size: 18px;
+}
+#Obrs{
+    
+    font-size: 18px;
+}
+#Fu{
+    
+    font-size: 18px;
+}
+#Furs{
+    
+    font-size: 18px;
+}
+#details{
+    color: rgb(147, 74, 243);
+    background-color: white;
+    border: 1px solid rgb(147, 74, 243);
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+#details:hover{
+    
+    border-radius: 0;
+    background-color: rgb(186, 143, 243);
+    color: white;
+    transition: 0.7s;
+}
+ .threefh{ 
+    height: 260px;
+    width: 94%;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+    margin:30px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    padding: 0;
+ }
+ .Tup{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 30px;
+    width: 98%;
+    border-bottom: 1px solid rgb(226, 226, 226);
+ }
+
+ #Table{
+    margin-left:20px;
+    width: 95%;
+ }
+ th{
+    padding: 10px;
+    border: 1px solid; 
+    margin:0;
+ }
+ #td{
+    text-align: center;
+    margin:0;
+    padding: 5px;
+    border: 1px solid; 
+ }
+ #tbody{
+    border: 1px solid; 
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    
+ }
+ #tr1{
+    background-color: aliceblue;
+    margin:0;
+ }
+
+ .last{
+    height:250px;
+    width: 99%;
+}
+.lins{
+    display: flex;
+    height: 220px;
+    margin: 0 5px 40px 50px;
+    box-shadow: 20px;
+    box-shadow: 0 0 10px rgba(100, 99, 99, 0.5);
+    
+}
+#aipo{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#aipo2{
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#chart{
+    height: 100%;
+    width:100%
+}
+.leflas{
+    margin: 70px;
+    margin-right: 0;
+    display: flex;
+    gap: 2%;
+    width: 100%;
+}
+.riglas{
+    font-size: 25px;
+    width: 100%;
+    padding: 0;
+}
+.up{
+    padding-top:25px;
+    display: flex;
+    gap:10%
+}
+.down{
+    display: flex;
+    gap:10%
+}
+#pass{
+    padding: 3px;
+    color: rgb(15, 108, 15);
+    background-color: rgb(127, 245, 125);
+}
+#fail{
+    padding: 3px;
+    color: rgb(147, 11, 11);
+    background-color: rgb(245, 162, 162);
+
+}
+.lineone{
+            display: flex;
+            gap: 70%;
+        }
+        .linethree{
+            display: flex;
+        }
+        #quan{
+        }
+        #gaph{
+            visibility: hidden;
+        }
+        .buy{
+            font-size:20px;
+            background: #fff;
+            border-radius: 6px;
+            position: absolute;
+            top: 0%;
+            left: 55%;
+            transform: translate(-50%,-50%) scale(0.1);
+            color: #333;        
+            width: 490px;
+            border: 2px solid ;
+            padding: 10px;
+            box-shadow: 5px solid black;
+            visibility: hidden;
+            transition: transform 0.4s,top 0.4s;
+            
+        }
+        .sell{
+            font-size:20px;
+            background: #fff;
+            border-radius: 6px;
+            position: absolute;
+            top: 0%;
+            left: 55%;
+            transform: translate(-50%,-50%) scale(0.1);
+            color: #333;        
+            width: 490px;
+            border: 2px solid ;
+            padding: 10px;
+            box-shadow: 5px solid black;
+            visibility: hidden;
+            transition: transform 0.4s,top 0.4s;
+            
+        }
+        #BUYING1{
+            font-size: 20px;
+            height: 30px;
+            margin: 10px;
+            margin-left: 0;
+            width: 100%;
+            color: rgb(219, 41, 32);
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgb(215, 43, 12);
+            
+        }
+        #BUYING1:hover{
+            color: white;
+            box-shadow: 0 0 20px rgba(238, 68, 12, 0.6);
+            background-color: rgb(215, 43, 12);
+            transition: 1s;
+        }
+        #BUYING{
+            font-size: 20px;
+            height: 30px;
+            margin: 10px;
+            margin-left: 0;
+            width: 100%;
+            color: rgb(30, 150, 42);
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgb(85, 224, 96);
+            
+        }
+        #BUYING:hover{
+            color: white;
+            box-shadow: 0 0 20px rgba(105, 245, 105, 0.6);
+            background-color: rgb(85, 224, 96);
+            transition: 1s;
+        }
+        .open-popup1{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .hui-1{
+            margin: 0px;
+            height: 20px;
+            width: 40px;
+        }
+        .hui{
+            margin: 0px;
+            height: 20px;
+            width: 70px;
+        }
+        #headingg{
+            margin: 0;
+            font-size: 30px;
+        }
+        #bluree{
+            backdrop-filter: blur(10px);
+        }
+
+
+.buy3{
+    font-size:20px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 82.5%;
+    transform: translate(-50%,-50%) scale(0.1);
+    color: #333;        
+    width: 320px;
+    border: 2px solid ;
+    padding: 10px;
+    box-shadow: 5px solid black;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup3{
+    visibility: visible;
+    top: 25%;
+    left: 82.5%;
+    transform: translate(-50%,-50%) scale(1);
+}
+#crosss{
+    text-align: right;
+    padding: 0;
+    margin:0;
+}
+#crossss{
+    border: 2px solid;
+    background-color: white;
+    color:rgb(234, 67, 67);
+    border-radius: 50%;
+}
+#crossss:hover{
+    color: white;
+    background-color:rgb(234, 67, 67);
+}
+#olas{
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+}
+#apply1{
+    margin-top: 8px;
+    border: 1px solid;
+    border-color: rgb(174, 174, 174);
+    color: rgb(164, 122, 223);
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+}
+#apply1:hover{
+    background-color: rgb(164, 122, 223);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="headdd">
+    <div class="ohead">
+        <div class="head">
+        <div class="loga">
+        <img id="logo" src="half3-modified.png">
+        <h1 id="CName">stocksavvy</h1>
+        </div>
+        <a href="DashPage.html"><h1>Dashboard</h1></a>
+        <a href="Portfolio.html"><h1>Portfolio</h1></a>
+        <a href="Orders.html"><h1>Orders</h1></a>
+        <a href="Funds.html"><h1 id="dash">Funds</h1></a>
+        <h1><a href="https://mmb.moneycontrol.com/forum-topics/stocks-1.html" target="_blank">Discussion</a></h1>
+
+        
+        
+    </div>
+    <div class="menu">
+        <h1 id="menu" onclick="openPopup3()">≡</h1>
+        </div>
+</div>
+</div>
+<div class="head2">
+    <div class="fh2"><pre>        <b>Nifty 50</b>
+        22,055.05 <span id="green">+141.90 (0.64%)</span> </pre><br>
+        <pre>        <b>BSE Sensex</b>
+        57,578.76 <span id="red">-273.51 (0.52%)</span></pre></div>
+        <div class="sh2">
+            <h2><pre><a href="DashPage.html#e">Explore</a>     <a href="DashPage.html#i">Investment</a>     <a href="DashPage.html#ip">IPO</a> </pre></h2>
+        </div>     
+</div>
+
+<div class="bod">
+    <div class="fhb">
+        <div class="note">
+            <p id="remov">If you sell stocks for Rs.1000, Rs.800 will be available for investing again today. Rs200 will be available next day onwards.</p>
+            <button id="cross" onclick="Remov()">╳</button>
+        </div>
+        <div class="twofh">
+            <div class="leftss">
+                <div class="lef1"><pre id="ltamoun">Rs 2500.50
+Total Funds</pre><button id="addfun" onclick="openPopup()">+ Add Funds</button><button id="withdraw" onclick="openPopup1()">⟲ Withdraw Funds</button>
+                </div>
+                <div class="lef2"><img src="SbiLogo.png" id="sbi"><p>State Bank of India</p></div>
+                <div class="lef3">
+                    <b><pre id="text3">Account Number              IFSC Code                  Branch       </pre></b>
+                    <pre id="text3d">      55********52                        SBIN0002455                Jalandhar,Punjab</pre>
+                </div>
+            </div>
+            <div class="rightss">
+                <div class="up1">
+                    <p id="rupe">Rs.58,451.25</p>
+                    <p id="Ainv">AMOUNT INVESTED</p>
+                </div>
+                <div class="up2">
+                    <p id="Ob">Opening Balance</p>
+                    <p id="Obrs">Rs.5521.50</p>
+                </div>
+                <div class="up3">
+                    <p id="Fu">Funds Used</p>
+                    <p id="Furs">Rs.00.00</p>
+                </div>
+                <div class="upbut">
+                    <button id="details">Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="threefh">
+            <div class="Tup">
+                Transaction History
+            </div>
+            <div class="Tdown">
+                <table id="Table">
+                    <thead id="thead">
+                    <tr id="tr1">
+                        <th >No</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Transaction ID</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    <tr id="tr">
+                            <td id="td">01</td>
+                            <td id="td">24 Feb 2024</td>
+                            <td id="td">12:05 PM</td>
+                            <td id="td">a2bcda1ab3eae5091fba</td>
+                            <td id="td"><span id="fail">Failed</span></td>
+                            <td id="td">Rs530</td>
+                    </tr>
+                    <tr id="tr">
+                        <td id="td">02</td>
+                        <td id="td">23 Feb 2024</td>
+                        <td id="td">05:05 PM</td>
+                        <td id="td">a2bcda89ab3eai091fba</td>
+                        <td id="td"><span id="pass">Success</span></td>
+                        <td id="td">Rs1000</td>
+                </tr>
+                <tr id="tr">
+                    <td id="td">01</td>
+                    <td id="td">20 Feb 2024</td>
+                    <td id="td">10:15 AM</td>
+                    <td id="td">a2bcda1ab3eae5091fba</td>
+                    <td id="td"><span id="pass">Success</span></td>
+                    <td id="td">Rs500</td>
+                </tr>
+                <tr id="tr">
+                    <td id="td">01</td>
+                    <td id="td">09 Feb 2024</td>
+                    <td id="td">01:00 PM</td>
+                    <td id="td">a11bcdfwfj9eae5091fba</td>
+                    <td id="td"><span id="pass">Success</span></td>
+                    <td id="td">Rs1550</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    <div class="shb">
+        <div class="shbs">
+            <input type="search" placeholder="🔍Search Stock">
+        </div>
+        <div class="shbw">
+                <table class shbw1>
+                    <thead>
+                        <tr>
+                            <td id="onel">
+            <h1>My Watchlist </h1> 
+                
+            </td>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><pre>COALINDIA                                                          <span id="colorPL">439.10</span>
+<span id="tradetype">NSE</span>                                                                    +6.7 (+1.55%)    </pre></td>
+                </tr>
+                <tr>
+                    <td><pre>DOMS                                                                     <span id="colorPL">1537.85</span>
+<span id="tradetype">BSE</span>                                                                    +8.5 (+2.95%)    </pre> </td>
+                </tr>
+                <tr>
+                    <td><pre>POWERGRID                                                          <span id="colorL">276.25</span>
+<span id="tradetype">NSE</span>                                                                    -3.85 (-1.39%)    </pre> </td>
+                </tr>
+                <tr>
+                    <td><pre>HUDCO                                                                   <span id="colorPL">196.50</span>
+<span id="tradetype">BSE</span>                                                                  +0.60 (+0.30%)    </pre> </td>
+                </tr>
+                <!-- <tr>
+                    <td><pre></pre> </td>
+                </tr>
+                <tr>
+                    <td><pre></pre> </td>
+                </tr>
+                <tr>
+                    <td><pre></pre> </td>
+                </tr>
+                <tr>
+                    <td><pre></pre> </td>
+                </tr> -->
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div class="last">
+    <div class="lins">
+        <div class="leflas">
+            <img id="logo" src="half3-modified.png">
+            <h1 id="CName">stocksavvy</h1>
+        </div>
+        <div class="riglas">
+            <div class="up">
+                <a href="index.html#about"><p>About us</p></a>
+                <a href="index.html#newsss"><p>News</p></a>
+                <a href=""><p>Terms of Service</p></a>
+            </div>
+            <div class="down">
+                <a href="index.html#contact"><p>Contact us</p></a>
+                <a href="index.html"><p>Home</p></a>
+                <a href=""><p>Privacy Policy</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="buy" id="buy">
+    
+    <center><p id="pass">Add Funds</p></center>
+    <div class="linethree">
+    <p id="quan">Current Balance: Rs.2500.50</p><span id="gaph">a  d </span>
+    <p>Add Funds:<span id="gaph">ad </span> <input type="text" id="price" value="Rs." class="hui"></p>
+    </div>
+    <div class="lef2"><img src="SbiLogo.png" id="sbi"><p>State Bank of India</p></div>
+                <div class="lef3">
+                    <b><pre id="text3">Account Number              IFSC Code                  Branch       </pre></b>
+                    <pre id="text3d">      55********52                        SBIN0002455                Jalandhar,Punjab</pre>
+                </div>
+    <button type="submit" id="BUYING" onclick="closePopup()">ADD</button>
+</div>
+<div class="sell" id="sell">
+    <center><p id="fail">Withdraw Funds</p></center>
+    <div class="linethree">
+    <p id="quan">Fund Available: Rs.2500.50</p><span id="gaph">a d </span>
+    <p>Withdraw Funds: <span id="gaph">a d </span> <input type="text" id="price" class="hui"></p>
+    </div>
+    <div class="lef2"><img src="SbiLogo.png" id="sbi"><p>State Bank of India</p></div>
+                <div class="lef3">
+                    <b><pre id="text3">Account Number              IFSC Code                  Branch       </pre></b>
+                    <pre id="text3d">      55********52                        SBIN0002455                Jalandhar,Punjab</pre>
+                </div>
+    <button type="submit" id="BUYING1" onclick="closePopup1()">WITHDRAW</button>
+</div>
+
+<div class="buy3" id="buy3">
+    <p id="crosss" ><button id="crossss" onclick="closePopup3()">x</button></p>
+    <center><img src="me.jpg" id="olas" ></center>
+    <center><p id="aipo"><span id="tradetype">User : </span> harshit8326</p>
+    <p id="aipo"><span id="tradetype">Applic. No : </span>23656546 </p>
+    <p id="aipo"><span id="tradetype">Email : </span> ihspvt1@gmail.com</p></center>
+    <center><a href="index.html"><button id="apply1" type="submit" >Logout</button></a></center>          
+</div>
+<script>
+      function openPopup3(){
+        let x=document.getElementById("buy3")
+        x.classList.add("open-popup3")
+  }
+  function closePopup3(){
+        let x=document.getElementById("buy3")
+        x.classList.remove("open-popup3")
+  }
+    function Remov(){
+    document.querySelector(".note").remove();
+}
+function openPopup(){
+        let x=document.getElementById("buy")
+        x.classList.add("open-popup")
+  }
+  
+  function closePopup(){
+    const myTimeout = setTimeout(Hello, 400);
+  }
+
+  function openPopup1(){
+        let x=document.getElementById("sell")
+        x.classList.add("open-popup1")
+  }
+  
+  function Hello(){
+        let x=document.getElementById("buy")
+        x.classList.remove("open-popup")
+  }
+  
+  function Hello1(){
+        let x=document.getElementById("sell")
+        x.classList.remove("open-popup1")
+  }
+  function closePopup1(){
+    const myTimeout = setTimeout(Hello1, 400);
+  }
+
+</script>
+</body>
+</html>
