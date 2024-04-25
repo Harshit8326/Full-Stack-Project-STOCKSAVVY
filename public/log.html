@@ -97,7 +97,9 @@ p{
         <div class="in">
             <div class="in1">
                 <div class="in11">
-                    <form action="/login" method="post">
+                    <form >
+<!-- include this github dont deploy backend so i removed: action="/login" method="post"> -->
+                        <!-- <form action="/login" method="post"> -->
                         <h1>Login</h1>
                         <h3>Email Address</h3>
                         <input class="input1" type="email" placeholder="abc@email.com" name="email" required><br> <!-- Added name attribute -->
@@ -105,7 +107,8 @@ p{
                         <input class="input1" type="password" placeholder="Enter 6 characters or more" name="password" required><br> <!-- Added name attribute -->
                         <p><input type="checkbox">Remember me</p>
                         <u><p><a href="">Forget Password</a></p></u>
-                        <button type="submit" class="log">LOGIN</button><br> <!-- Changed to button type submit -->
+                        <!-- <button type="submit" class="log">LOGIN</button> -->
+                        <a href="DashPage.html"><button type="submit" class="log">LOGIN</button><br></a> <!-- Changed to button type submit -->
                     </form>
                 </div>
             </div>
